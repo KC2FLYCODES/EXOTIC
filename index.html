@@ -5,19 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Exotic Smoke Shop | Danville, VA | Open till 2 AM, order ahead</title>
 <meta name="description" content="Danville's 4.9-star smoke shop at 418 Trade St. Vapes, hookahs, glass, accessories and exotic snacks. Open till 2 AM. Order ahead for pickup or delivery. 21+.">
-<meta name="theme-color" content="#0B0A10">
+<meta name="theme-color" content="#06080F">
 <link rel="canonical" href="https://kc2flycodes.github.io/EXOTIC/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Exotic Smoke Shop. Open till 2.">
 <meta property="og:description" content="Browse the wall, order ahead, pick up or get it delivered in Danville, VA. 21+.">
-<meta property="og:image" content="https://kc2flycodes.github.io/EXOTIC/assets/og-image.png">
+<meta property="og:image" content="https://kc2flycodes.github.io/EXOTIC/assets/og-image.jpg">
 <meta property="og:url" content="https://kc2flycodes.github.io/EXOTIC/">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261030a">
+<link rel="stylesheet" href="style.css?v=20261030b">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Store","name":"Exotic Smoke Shop","image":"https://kc2flycodes.github.io/EXOTIC/assets/storefront.jpg","telephone":"+1-434-835-2059","address":{"@type":"PostalAddress","streetAddress":"418 Trade St, Suite B","addressLocality":"Danville","addressRegion":"VA","postalCode":"24541","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":36.5824978,"longitude":-79.42691},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"02:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"09:00","closes":"00:00"}]}
 </script>
@@ -25,32 +25,42 @@
 <body>
 
 <div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
-  <svg class="gate-hex" viewBox="0 0 200 200" aria-hidden="true"><path pathLength="1" d="M100 12l76 44v88l-76 44-76-44V56z"/></svg>
-  <p class="eyebrow">Exotic Smoke Shop &middot; Danville, VA</p>
-  <h2 id="gateTitle">Are you 21 or older?</h2>
-  <p class="gate-note">Everything here is for adults 21+. We check ID on every pickup and every delivery.</p>
-  <div class="gate-actions">
-    <button class="btn btn-hot" id="gateYes">Yes, I'm 21+</button>
-    <button class="btn btn-line" id="gateNo">No</button>
+  <img class="gate-bg" src="assets/ceiling.jpg" width="650" height="869" alt="">
+  <div class="gate-inner">
+    <div class="lockup lit" role="img" aria-label="Exotic Smoke Shop">
+      <img src="assets/logo-exotic-web.png" width="1000" height="358" alt="">
+      <img class="lockup-sub" src="assets/logo-smokeshop-web.png" width="800" height="135" alt="">
+    </div>
+    <h2 id="gateTitle">Are you 21 or older?</h2>
+    <p class="gate-note">418 Trade St, Danville, VA. ID checked on every pickup and every delivery.</p>
+    <div class="gate-actions">
+      <button class="btn btn-hot" id="gateYes">Yes, I'm 21+</button>
+      <button class="btn btn-line" id="gateNo">No</button>
+    </div>
+    <p class="gate-no" id="gateMsg" hidden>Sorry, you have to be 21 to come in.</p>
   </div>
-  <p class="gate-no" id="gateMsg" hidden>Sorry, you have to be 21 to come in.</p>
+  <div class="led led-gate" aria-hidden="true"></div>
 </div>
 
 <header class="top">
   <a class="brand" href="#top" aria-label="Exotic Smoke Shop, home">
-    <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 5l23.4 13.5v27L32 59 8.6 45.5v-27z"/></svg>
-    <span>EXOTIC</span>
+    <img src="assets/logo-exotic-web.png" width="1000" height="358" alt="">
   </a>
   <p class="status" id="openStatus" aria-live="polite"></p>
   <a class="top-call" href="tel:+14348352059">(434) 835-2059</a>
+  <div class="led" aria-hidden="true"></div>
 </header>
 
 <main id="top">
   <section class="hero">
     <img class="hero-img" src="assets/ceiling.jpg" width="650" height="869" alt="Inside Exotic Smoke Shop under a ceiling of white hexagon LED lights, with stocked shelves and glass cases">
     <div class="hero-copy">
+      <div class="lockup lockup-hero lit" role="img" aria-label="Exotic Smoke Shop">
+        <img src="assets/logo-exotic-web.png" width="1000" height="358" alt="">
+        <img class="lockup-sub" src="assets/logo-smokeshop-web.png" width="800" height="135" alt="">
+      </div>
+      <h1>Open <em>till 2.</em></h1>
       <p class="rating"><b>4.9</b> <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 323 Google reviews</p>
-      <h1>Open<br><em>till 2.</em></h1>
       <p class="lede">Danville's vape, hookah and glass shop on Trade Street. See the wall from your couch, send us your order, and we'll have it ready at the counter or out the door.</p>
       <div class="hero-actions">
         <a class="btn btn-hot" href="#wall">Start an order</a>
@@ -129,6 +139,7 @@
 </main>
 
 <footer class="foot">
+  <img class="foot-logo" src="assets/logo-exotic-web.png" width="1000" height="358" loading="lazy" alt="Exotic Smoke Shop">
   <p id="footTap"><b>Exotic Smoke Shop</b> &middot; 418 Trade St, Suite B, Danville, VA 24541</p>
   <p>Sales to adults 21+ only. Valid government photo ID required at pickup and delivery. Products are for legal tobacco use.</p>
   <p class="demo-tag">Concept demo by Thrustra. Shelf items are sample types, not live inventory.</p>
@@ -231,6 +242,6 @@
 
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="script.js?v=20261030a"></script>
+<script src="script.js?v=20261030b"></script>
 </body>
 </html>

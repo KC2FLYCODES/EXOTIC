@@ -96,6 +96,13 @@
   }
   renderStatus(); setInterval(renderStatus, 60000);
 
+  /* header logo takes over once the hero logo scrolls away */
+  (function () {
+    var brand = document.querySelector('.brand'), big = document.querySelector('.lockup-hero');
+    if (!('IntersectionObserver' in window)) { brand.classList.add('show'); return; }
+    new IntersectionObserver(function (es) { brand.classList.toggle('show', !es[0].isIntersecting); }, { rootMargin: '-56px 0px 0px 0px' }).observe(big);
+  })();
+
   /* marketing banner */
   function renderPromo() {
     var text = esc(store.get(K.promo, DEFAULT_PROMO)), base = text + ' &nbsp;/&nbsp; 4.9 stars, 323 Google reviews &nbsp;/&nbsp; 418 Trade St', out = '';
